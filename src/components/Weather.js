@@ -11,20 +11,20 @@ const Weather = () => {
   // Weather icon mapping
   const getWeatherIcon = (iconCode) => {
     const iconMap = {
-      "01d": "/images/clear.png",
-      "01n": "/images/clear.png",
-      "02d": "/images/cloud.png",
-      "02n": "/images/cloud.png",
-      "03d": "/images/cloud.png",
-      "03n": "/images/cloud.png",
-      "04d": "/images/drizzle.png",
-      "04n": "/images/drizzle.png",
-      "09d": "/images/rain.png",
-      "09n": "/images/rain.png",
-      "10d": "/images/rain.png",
-      "10n": "/images/rain.png",
-      "13d": "/images/snow.png",
-      "13n": "/images/snow.png",
+      "01d": "./images/clear.png",
+      "01n": "./images/clear.png",
+      "02d": "./images/cloud.png",
+      "02n": "./images/cloud.png",
+      "03d": "./images/cloud.png",
+      "03n": "./images/cloud.png",
+      "04d": "./images/drizzle.png",
+      "04n": "./images/drizzle.png",
+      "09d": "./images/rain.png",
+      "09n": "./images/rain.png",
+      "10d": "./images/rain.png",
+      "10n": "./images/rain.png",
+      "13d": "./images/snow.png",
+      "13n": "./images/snow.png",
     };
 
     return iconMap[iconCode] || "/images/clear.png";
