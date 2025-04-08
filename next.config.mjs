@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
 
-export default nextConfig;
+  basePath: "/my-weather-app",
+  assetPrefix: "/my-weather-app/",
+
+  distDir: "out",
+};
+
+module.exports = nextConfig;
