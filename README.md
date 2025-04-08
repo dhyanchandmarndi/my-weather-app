@@ -1,11 +1,11 @@
 Tech Stack:
 
-Frontend-	Next.js, React.js, JavaScript (ES6+)
-Styling-	Tailwind CSS
-API-	OpenWeatherMap API
-Deployment-	GitHub Pages, Git + GitHub
-Image Optimization-	next/image (with unoptimized: true for GitHub Pages compatibility)
-Tools-	Visual Studio Code, Node.js, npm
+1. Frontend- Next.js, React.js, JavaScript (ES6+)
+2. Styling- Tailwind CSS
+3. API-	OpenWeatherMap API
+4. Deployment- GitHub Pages, Git + GitHub
+5. Image Optimization- next/image (with unoptimized: true for GitHub Pages compatibility)
+6. Tools- Visual Studio Code, Node.js, npm
 
 Setup Instructions:
 
