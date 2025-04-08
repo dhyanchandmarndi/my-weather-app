@@ -2,32 +2,35 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Weather = () => {
   const inputRef = useRef();
   const [weatherData, setWeatherData] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const { basePath } = useRouter();
+
   // Weather icon mapping
   const getWeatherIcon = (iconCode) => {
     const iconMap = {
-      "01d": "./images/clear.png",
-      "01n": "./images/clear.png",
-      "02d": "./images/cloud.png",
-      "02n": "./images/cloud.png",
-      "03d": "./images/cloud.png",
-      "03n": "./images/cloud.png",
-      "04d": "./images/drizzle.png",
-      "04n": "./images/drizzle.png",
-      "09d": "./images/rain.png",
-      "09n": "./images/rain.png",
-      "10d": "./images/rain.png",
-      "10n": "./images/rain.png",
-      "13d": "./images/snow.png",
-      "13n": "./images/snow.png",
+      "01d": `${basePath}/images/clear.png`,
+      "01n": `${basePath}/images/clear.png`,
+      "02d": `${basePath}/images/cloud.png`,
+      "02n": `${basePath}/images/cloud.png`,
+      "03d": `${basePath}/images/cloud.png`,
+      "03n": `${basePath}/images/cloud.png`,
+      "04d": `${basePath}/images/drizzle.png`,
+      "04n": `${basePath}/images/drizzle.png`,
+      "09d": `${basePath}/images/rain.png`,
+      "09n": `${basePath}/images/rain.png`,
+      "10d": `${basePath}/images/rain.png`,
+      "10n": `${basePath}/images/rain.png`,
+      "13d": `${basePath}/images/snow.png`,
+      "13n": `${basePath}/images/snow.png`,
     };
 
-    return iconMap[iconCode] || "/images/clear.png";
+    return iconMap[iconCode] || `${basePath}/images/clear.png`;
   };
   //   alert, if user doesn't enter any city and click search button
   const search = async (city) => {
@@ -93,7 +96,7 @@ const Weather = () => {
           className="bg-white p-3 rounded-full hover:bg-gray-100 transition"
         >
           <Image
-            src="/images/search.png"
+            src={`${basePath}/images/search.png`}
             alt="Search"
             width={24}
             height={24}
@@ -131,7 +134,7 @@ const Weather = () => {
           <div className="grid grid-cols-2 gap-6 mt-4">
             <div className="flex items-center gap-4 bg-blue-500/30 p-4 rounded-lg">
               <Image
-                src="/images/humidity.png"
+                src={`${basePath}/images/humidity.png`}
                 alt="Humidity"
                 width={40}
                 height={40}
@@ -144,7 +147,7 @@ const Weather = () => {
 
             <div className="flex items-center gap-4 bg-blue-500/30 p-4 rounded-lg">
               <Image
-                src="/images/wind.png"
+                src={`${basePath}/images/wind.png`}
                 alt="Wind Speed"
                 width={40}
                 height={40}
