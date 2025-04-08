@@ -9,7 +9,7 @@ const Weather = () => {
   const [weatherData, setWeatherData] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const { basePath } = useRouter();
+  const basePath = "/my-weather-app";
 
   // Weather icon mapping
   const getWeatherIcon = (iconCode) => {
