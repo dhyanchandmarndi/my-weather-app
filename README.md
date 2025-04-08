@@ -16,7 +16,7 @@ Setup Instructions:
 5. Prepare for Deployment
 6. Deploy to GitHub Pages
 
-My app will be live at: https://dhyanchandmarndi.github.io/my-weather-app/
+My app is live at: https://dhyanchandmarndi.github.io/my-weather-app/
 
 API Integration details:
 
